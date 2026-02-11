@@ -93,26 +93,6 @@ This works with any tool that supports the MCP standard, including Claude Code, 
 
 ---
 
-### Setup for ChatGPT or Remote Clients (HTTP mode)
-
-For remote clients, run the MCP server in HTTP mode:
-
-```bash
-MCP_TRANSPORT=http \
-SUNDEROS_API_KEY=so_your_key_here \
-SUNDEROS_API_URL=https://your-site.example.com \
-MCP_PORT=3001 \
-npx sunderos-mcp
-```
-
-The server will start on the specified port (default 3001). The MCP endpoint is available at `http://your-server:3001/mcp` and a health check at `http://your-server:3001/health`.
-
-In HTTP mode, the MCP server requires an `Authorization: Bearer <key>` header on all requests (using either `MCP_API_KEY` or `SUNDEROS_API_KEY`). This protects your data when the server is exposed over a network.
-
-> **Note:** If you are exposing the HTTP endpoint to the internet, make sure to run it behind a reverse proxy with HTTPS.
-
----
-
 ## Available MCP Tools
 
 Once connected, the AI assistant has access to 23 tools organized by domain. You do not need to call these tools directly -- just ask questions or give instructions in natural language, and the assistant will use the right tool automatically.
