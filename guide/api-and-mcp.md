@@ -157,44 +157,58 @@ Once connected, the AI assistant has access to 23 tools organized by domain. You
 
 ---
 
-## Example Prompts
+## What Can You Do With It?
 
-Once the MCP server is connected, you can interact with your fitness data using natural language. Here are some things you can ask:
+Once the MCP server is connected, your AI assistant becomes a personal coach that knows your equipment, your history, and your goals. You talk to it in plain English and it reads and writes your Sunderos data directly — no copy-pasting, no manual entry.
 
-### Quick Status
-- "How's my training going?"
-- "Give me a summary of my recent workouts."
-- "What's my active program?"
+Here are some real examples to try.
 
-### Workout History
-- "Show me my last 5 workouts."
-- "What did I do in my last push workout?"
-- "How much total volume did I do this week?"
+### Build a Full Program Around Your Equipment
 
-### Exercise Stats and PRs
+> *I have a home gym with a barbell, squat rack with safety pins, pull-up bar, cable stack (high and low), adjustable dumbbells up to 100 lbs, EZ curl bar, hex bar, and elastic bands. No leg press or machines. Build me a 12-week hypertrophy program — push/pull/legs, 4 days per week, 15-20 sets per session for the main muscle groups. Include warmup sets before heavy compounds.*
+
+The AI will check your exercise library, create any missing exercises for your equipment, build out the templates with set schemes and rep ranges, assemble everything into a multi-week program, and activate it — all in one conversation. You open the app and your first workout is ready to go.
+
+### Adjust a Program After You Start
+
+> *The leg day you made has too much volume, I'm dying by the end. Can you drop it to 14 working sets and swap out the lunges for Bulgarian split squats?*
+
+Because the AI has access to your actual templates, it can pull up the leg day, see exactly what's in it, make the swap, and adjust the set counts. You don't need to describe what's already there.
+
+### Get a Training Check-In
+
+> *Look at my last two weeks of workouts. Am I hitting each muscle group enough? Anything I'm neglecting?*
+
+The AI pulls your recent session history, tallies volume by muscle group, and gives you a straightforward assessment with suggestions — like a coach reviewing your training log.
+
+### Pre-Workout Warmup and Stretching Advice
+
+> *What's my workout today and what should I stretch for?*
+
+The AI looks up your active program, figures out what day you're on, and tells you today's scheduled workout. Then — because it knows which muscle groups that session targets — it gives you a tailored stretching and warmup routine specific to today's exercises. Pull day? It'll suggest lat stretches, dead hangs, and bicep stretches. Leg day? Couch stretches, hamstring work, and hip openers.
+
+### Auto-Adjust Weights Based on RPE
+
+> *My bench press has felt easy lately — RPE 6-7 on sets that should be 8. Should I go up in weight?*
+
+It checks your recent bench press sets, looks at the logged RPE values, and suggests a specific weight increase based on your actual performance data.
+
+### Quick Day-to-Day Questions
+
+These work great for fast check-ins mid-session or between workouts:
+
 - "What's my bench press PR?"
-- "Show me my squat progress over time."
-- "What are all my personal records?"
-
-### Weight Suggestions
-- "Should I increase my bench press weight?"
-- "Based on my RPE, what weight should I use for deadlifts?"
-
-### Body Weight
+- "What did I do last push day?"
 - "Log my body weight as 185 lbs."
-- "Show me my body weight trend."
-- "What's my average body weight this month?"
+- "Show me my squat progress over the last 3 months."
+- "What exercises do I have for back?"
+- "Add a new exercise: Meadows Row, back, barbell."
 
-### Managing Templates and Programs
-- "Create a new upper body template with bench press, overhead press, and rows."
-- "Show me my Push day template."
-- "Set up a 4-week push/pull/legs program."
-- "List all my workout templates."
+### Export Everything for a Real Coach
 
-### Exercise Library
-- "What chest exercises do I have?"
-- "Add a new exercise called Bulgarian Split Squat, legs, dumbbell."
-- "Show me all barbell exercises."
+> *Export all my training data — I want to send it to my coach so they can see what I've been doing.*
+
+The AI exports your full history (exercises, templates, programs, sessions, body weight) in a structured format you can share.
 
 ---
 
