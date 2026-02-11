@@ -70,33 +70,9 @@ The MCP server needs two environment variables:
 
 ---
 
-### Setup for Claude Code (stdio)
+### Setup for Local AI Tools (stdio)
 
-The easiest way to set up the MCP server is with `npx` -- no need to install anything. Add the following to your project's `.mcp.json` file or your global `~/.claude.json` file:
-
-```json
-{
-  "mcpServers": {
-    "sunderos": {
-      "command": "npx",
-      "args": ["-y", "sunderos-mcp"],
-      "env": {
-        "SUNDEROS_API_KEY": "so_your_key_here",
-        "SUNDEROS_API_URL": "https://your-site.example.com"
-      }
-    }
-  }
-}
-```
-
----
-
-### Setup for Claude Desktop (stdio)
-
-Add the following to your `claude_desktop_config.json` file:
-
-- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+The easiest way to set up the MCP server is with `npx` — no need to install anything. Add the following to your `.mcp.json` file:
 
 ```json
 {
@@ -113,7 +89,7 @@ Add the following to your `claude_desktop_config.json` file:
 }
 ```
 
-Restart Claude Desktop after saving the file.
+This works with any tool that supports the MCP standard, including Claude Code, Claude Desktop, Gemini CLI, Cursor, Windsurf, and others. Check your tool's documentation for where it looks for `.mcp.json` — common locations include the project root directory or a global config path like `~/.claude.json`.
 
 ---
 
