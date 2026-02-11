@@ -4,6 +4,20 @@ Welcome to Sunderos -- your personal workout companion. This guide will walk you
 
 ---
 
+## Use AI as Your Personal Coach
+
+Sunderos connects directly to AI assistants like Claude, Gemini, and ChatGPT through the MCP protocol. That means you can talk to your AI in plain English and it will read and write your actual training data -- building programs, adjusting templates, tracking your progress, and answering questions about your workouts.
+
+Some things you can do:
+
+- **"Build me a 12-week push/pull/legs program for my home gym"** -- Describe your available equipment and goals. The AI creates the exercises, templates, and full program schedule, then activates it. You open the app and your first workout is waiting.
+- **"What's my workout today and what should I stretch for?"** -- It checks your active program, figures out today's session, and gives you a warmup routine tailored to the muscle groups you're about to train.
+- **"My bench has felt easy lately -- should I go up in weight?"** -- It reviews your recent sets and RPE data and suggests a specific adjustment.
+
+No copy-pasting, no manual data entry. You just talk to it and your app updates in real time. To set it up, see the [API & MCP Guide](api-and-mcp.md).
+
+---
+
 ## Creating Your Account
 
 1. Open the app in your browser (or install it as an app -- see the [Install Guide](install-pwa.md)).
