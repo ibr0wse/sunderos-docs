@@ -66,13 +66,13 @@ The MCP server needs two environment variables:
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `SUNDEROS_API_KEY` | Yes | The API key you generated above (the full `so_...` string) |
-| `SUNDEROS_API_URL` | Yes | URL of your Sunderos API (e.g., `http://localhost:3000`) |
+| `SUNDEROS_API_URL` | Yes | URL of your Sunderos instance (e.g., `https://your-site.example.com`) |
 
 ---
 
 ### Setup for Claude Code (stdio)
 
-The easiest way to set up the MCP server is with `npx` -- no need to clone the repository or build anything. Add the following to your project's `.mcp.json` file or your global `~/.claude.json` file:
+The easiest way to set up the MCP server is with `npx` -- no need to install anything. Add the following to your project's `.mcp.json` file or your global `~/.claude.json` file:
 
 ```json
 {
@@ -82,24 +82,7 @@ The easiest way to set up the MCP server is with `npx` -- no need to clone the r
       "args": ["-y", "sunderos-mcp"],
       "env": {
         "SUNDEROS_API_KEY": "so_your_key_here",
-        "SUNDEROS_API_URL": "http://localhost:3000"
-      }
-    }
-  }
-}
-```
-
-If you have the source code checked out locally, you can also point directly to the built file:
-
-```json
-{
-  "mcpServers": {
-    "sunderos": {
-      "command": "node",
-      "args": ["/path/to/sunderos/apps/mcp/dist/index.js"],
-      "env": {
-        "SUNDEROS_API_KEY": "so_your_key_here",
-        "SUNDEROS_API_URL": "http://localhost:3000"
+        "SUNDEROS_API_URL": "https://your-site.example.com"
       }
     }
   }
@@ -123,7 +106,7 @@ Add the following to your `claude_desktop_config.json` file:
       "args": ["-y", "sunderos-mcp"],
       "env": {
         "SUNDEROS_API_KEY": "so_your_key_here",
-        "SUNDEROS_API_URL": "http://localhost:3000"
+        "SUNDEROS_API_URL": "https://your-site.example.com"
       }
     }
   }
@@ -141,7 +124,7 @@ For remote clients, run the MCP server in HTTP mode:
 ```bash
 MCP_TRANSPORT=http \
 SUNDEROS_API_KEY=so_your_key_here \
-SUNDEROS_API_URL=http://localhost:3000 \
+SUNDEROS_API_URL=https://your-site.example.com \
 MCP_PORT=3001 \
 npx sunderos-mcp
 ```
@@ -268,7 +251,7 @@ The `SUNDEROS_API_KEY` environment variable is not set or is empty. Double-check
 Your account may not have any data yet. Start by logging a few workouts in the app, then try again.
 
 **Connection refused errors**
-Make sure the Sunderos API server is running (`pnpm dev` for development, or your production deployment). Verify the `SUNDEROS_API_URL` points to the correct address and port.
+Make sure your Sunderos instance is running and that `SUNDEROS_API_URL` points to the correct address.
 
 **Key stopped working**
 The key may have been revoked or expired. Check the API Keys section in Settings. Generate a new key if needed.
