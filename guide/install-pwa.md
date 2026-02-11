@@ -20,7 +20,7 @@ Safari is the only browser that supports PWA installation on iOS.
 
 The Sunderos icon will now appear on your home screen. Tapping it opens the app in standalone mode -- no Safari toolbar, no address bar, just the app.
 
-> **Note:** On iOS, the app icon is generated from the 192x192 and 512x512 PNG icons bundled with the app. The app uses a dark background (`#09090b`) and displays in portrait orientation.
+> **Note:** On iOS, the app uses a dark-themed icon and displays in portrait orientation.
 
 ---
 
@@ -60,11 +60,11 @@ One of the key benefits of installing as a PWA is offline support. Here is how i
 
 ### What Gets Cached
 
-When you first load the app, the service worker downloads and caches all of the app's files (HTML, CSS, JavaScript, icons, and fonts). This means the app shell loads instantly on future visits, even without an internet connection.
+When you first load the app, it downloads and caches all the files it needs to run. This means the app loads instantly on future visits, even without an internet connection.
 
-### API Data Caching
+### Data Caching
 
-API responses are cached using a **network-first** strategy:
+Your data is cached using a **network-first** strategy:
 
 - The app tries to fetch fresh data from the server first.
 - If the server responds, the fresh data is shown and cached.
@@ -72,11 +72,11 @@ API responses are cached using a **network-first** strategy:
 
 This means the most recent data you viewed will still be available offline.
 
-> **Note:** Authentication, API key, and settings endpoints are never cached for security reasons.
+> **Note:** Login credentials, API keys, and account settings are never cached for security reasons.
 
 ### The Sync Queue
 
-When you are offline and make changes (such as logging a workout or recording body weight), those changes are saved locally in your browser's IndexedDB database. A sync queue tracks everything that needs to be sent to the server.
+When you are offline and make changes (such as logging a workout or recording body weight), those changes are saved locally on your device. A sync queue tracks everything that needs to be sent to the server.
 
 When your connection comes back:
 
@@ -102,17 +102,17 @@ Once everything is synced and you are back online, the banner disappears.
 
 ---
 
-## Service Worker Updates
+## App Updates
 
-The app's service worker uses an **auto-update** strategy. When a new version of the app is deployed:
+The app uses an **auto-update** strategy. When a new version is deployed:
 
-1. The service worker detects the update in the background.
-2. The new version is downloaded and cached.
+1. The update is detected and downloaded in the background.
+2. The new version is cached automatically.
 3. The update activates the next time you open the app (or refresh the page).
 
 You do not need to manually clear your cache or reinstall the app. Updates happen automatically and seamlessly.
 
-> **Tip:** If you ever notice the app behaving unexpectedly, try closing it completely and reopening it. This forces the new service worker to activate.
+> **Tip:** If you ever notice the app behaving unexpectedly, try closing it completely and reopening it. This forces the latest version to activate.
 
 ---
 
