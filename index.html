@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
     :root {
-      --base-background-color: #1e1e1e;
-      --base-color: #c8c8c8;
-      --theme-color: #42b983;
-      --sidebar-background: #1a1a1a;
-      --sidebar-nav-link-color: #b8b8b8;
-      --sidebar-nav-link-color--active: #42b983;
-      --cover-background-color: #1e1e1e;
-      --search-background: #2a2a2a;
-      --link-color: #42b983;
+      --base-background-color: #0d1117;
+      --base-color: #e6edf3;
+      --theme-color: #58a6ff;
+      --sidebar-background: #010409;
+      --sidebar-nav-link-color: #c9d1d9;
+      --sidebar-nav-link-color--active: #58a6ff;
+      --cover-background-color: #0d1117;
+      --search-background: #161b22;
+      --link-color: #58a6ff;
+      --surface-color: #161b22;
+      --border-color: #30363d;
+      --text-muted: #8b949e;
     }
 
     body {
@@ -23,10 +26,11 @@
       color: var(--base-color);
     }
 
+    /* Sidebar */
     .sidebar {
       background-color: var(--sidebar-background);
       color: var(--sidebar-nav-link-color);
-      border-right: 1px solid #333;
+      border-right: 1px solid var(--border-color);
     }
 
     .sidebar a {
@@ -36,52 +40,114 @@
     .sidebar a.active,
     .sidebar a:hover {
       color: var(--sidebar-nav-link-color--active);
+      font-weight: 600;
     }
 
     .sidebar .sidebar-nav > ul > li > a {
       font-weight: 600;
     }
 
+    .app-name-link {
+      color: var(--theme-color) !important;
+    }
+
+    /* Main content */
     .markdown-section {
       color: var(--base-color);
     }
 
     .markdown-section a {
       color: var(--link-color);
+      text-decoration: underline;
+      text-decoration-color: rgba(88, 166, 255, 0.4);
+      text-underline-offset: 2px;
+    }
+
+    .markdown-section a:hover {
+      text-decoration-color: var(--link-color);
     }
 
     .markdown-section h1,
     .markdown-section h2,
     .markdown-section h3,
     .markdown-section h4 {
-      color: #e0e0e0;
+      color: #f0f6fc;
     }
 
+    .markdown-section h1 {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.3em;
+    }
+
+    .markdown-section h2 {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.25em;
+    }
+
+    .markdown-section hr {
+      border-color: var(--border-color);
+      background-color: var(--border-color);
+    }
+
+    /* Inline code */
     .markdown-section code {
-      background-color: #2a2a2a;
-      color: #e06c75;
+      background-color: rgba(110, 118, 129, 0.2);
+      color: #e6edf3;
+      padding: 0.2em 0.4em;
+      border-radius: 6px;
+      font-size: 85%;
     }
 
+    /* Code blocks */
     .markdown-section pre {
-      background-color: #2a2a2a !important;
+      background-color: var(--surface-color) !important;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
     }
 
+    .markdown-section pre code {
+      background-color: transparent;
+      color: #e6edf3;
+    }
+
+    /* Tables */
     .markdown-section table th {
-      background-color: #2a2a2a;
+      background-color: var(--surface-color);
+      color: #f0f6fc;
+      font-weight: 600;
+    }
+
+    .markdown-section table td {
+      background-color: var(--base-background-color);
     }
 
     .markdown-section table td,
     .markdown-section table th {
-      border-color: #444;
+      border-color: var(--border-color);
     }
 
+    .markdown-section table tr:nth-child(even) td {
+      background-color: var(--surface-color);
+    }
+
+    /* Blockquotes / tips */
     .markdown-section blockquote {
-      border-left-color: var(--theme-color);
-      color: #999;
+      border-left: 4px solid var(--theme-color);
+      background-color: rgba(88, 166, 255, 0.06);
+      color: var(--text-muted);
+      padding: 0.75em 1em;
+      border-radius: 0 6px 6px 0;
     }
 
+    .markdown-section blockquote p {
+      color: #c9d1d9;
+    }
+
+    /* Search */
     .search .input-wrap {
       background-color: var(--search-background);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
     }
 
     .search input {
@@ -90,16 +156,19 @@
     }
 
     .search .matching-post {
-      border-bottom-color: #333;
+      border-bottom-color: var(--border-color);
     }
 
-    .app-name-link {
-      color: var(--theme-color) !important;
-    }
-
+    /* Images */
     .markdown-section img {
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Strong / bold text */
+    .markdown-section strong {
+      color: #f0f6fc;
     }
   </style>
 </head>
