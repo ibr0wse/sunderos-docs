@@ -13,7 +13,7 @@ Open the **History** tab from the bottom navigation bar. You'll see a list of yo
 - **Exercise count** (e.g. "5 exercises")
 - **Notes** (if you added any during the session, shown as a preview)
 
-<img src="../screenshots/history-session-list.png" alt="Workout history session list" width="300" />
+<img src="screenshots/history-session-list.png" alt="Workout history session list" width="300" />
 
 Sessions are listed in reverse chronological order (most recent first). If you have a large history, tap **Load More** at the bottom to fetch older sessions.
 
@@ -30,7 +30,7 @@ Use the filter buttons at the top to narrow down which sessions appear:
 | **Year** | Sessions from the current year |
 | **All** | Every session you've ever logged |
 
-<img src="../screenshots/history-period-filter.png" alt="History period filter buttons" width="300" />
+<img src="screenshots/history-period-filter.png" alt="History period filter buttons" width="300" />
 
 Changing the filter updates both the session list and the summary stats above it.
 
@@ -46,7 +46,7 @@ When you have sessions in the selected period, three stat cards appear at the to
 | **Total Time** | Combined duration of all sessions |
 | **Total Volume** | Total weight lifted (weight x reps across all sets), in lbs |
 
-<img src="../screenshots/history-summary-stats.png" alt="History summary stats row" width="300" />
+<img src="screenshots/history-summary-stats.png" alt="History summary stats row" width="300" />
 
 > **Note:** Total Volume is calculated as sessions are expanded and their details loaded. Expand sessions to get a more accurate total.
 
@@ -56,7 +56,7 @@ When you have sessions in the selected period, three stat cards appear at the to
 
 Tap any session card to expand it and see the full breakdown.
 
-<img src="../screenshots/session-detail-sets.png" alt="Expanded session detail with exercise sets" width="300" />
+<img src="screenshots/session-detail-sets.png" alt="Expanded session detail with exercise sets" width="300" />
 
 ### What You'll See
 
@@ -79,7 +79,7 @@ Tap the session card again to collapse it.
 
 Within an expanded session, each exercise has a small chart icon (trending arrow) next to its name. Tap it to reveal an inline **progress chart** for that exercise.
 
-[Screenshot: Inline exercise progress chart in history]
+<img src="screenshots/exercise-progress-chart.png" alt="Inline exercise progress chart in history" width="300" />
 
 The progress chart shows:
 
@@ -104,7 +104,7 @@ If you need to remove a session from your history (e.g., an accidental or test w
 
 Deleted sessions and all their logged sets are permanently removed and cannot be recovered.
 
-[Screenshot: Swipe-to-delete revealing delete button on a session card]
+<img src="screenshots/history-swipe-delete.png" alt="Swipe-to-delete revealing delete button on a session card" width="300" />
 
 ---
 
@@ -122,19 +122,19 @@ Three PR cards at the top:
 | **Est. 1RM** | Estimated one-rep max, calculated from your best weight/rep combination |
 | **Most Volume** | Highest single-session volume for that exercise, with date |
 
-[Screenshot: Exercise history PR cards]
+<img src="screenshots/exercise-pr-cards.png" alt="Exercise history PR cards" width="300" />
 
 ### Strength Curve
 
 A line chart plotting your max weight per session over time. The shaded area under the curve helps visualize the trend. Dates appear along the x-axis.
 
-[Screenshot: Strength curve chart]
+<img src="screenshots/strength-curve-chart.png" alt="Strength curve chart" width="300" />
 
 ### Volume Progression
 
 A similar line chart (in green) showing how your total volume per session has changed over time.
 
-[Screenshot: Volume progression chart]
+<img src="screenshots/volume-progression-chart.png" alt="Volume progression chart" width="300" />
 
 ### Session History
 
@@ -143,7 +143,7 @@ Below the charts, a full list of every session where you performed this exercise
 - Date and set count
 - Each set's weight, reps, and RPE
 
-[Screenshot: Exercise session history list]
+<img src="screenshots/exercise-session-history.png" alt="Exercise session history list" width="300" />
 
 ---
 

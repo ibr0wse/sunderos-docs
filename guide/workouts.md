@@ -44,7 +44,7 @@ The app automatically figures out which workout is next based on the day of the 
 
 Once you start a workout, you enter the active workout screen. This is a full-screen experience designed to keep you focused.
 
-<img src="../screenshots/active-workout-screen.png" alt="Active Workout Screen" width="300" />
+<img src="screenshots/active-workout-screen.png" alt="Active Workout Screen" width="300" />
 
 ### Header
 
@@ -77,7 +77,7 @@ In tabbed mode, a scrollable row of exercise tabs appears below the header. Each
 
 Tap any tab to jump to that exercise. A **+** button at the end lets you add more exercises mid-workout.
 
-<img src="../screenshots/exercise-navigator-tabs.png" alt="Exercise Navigator Tabs" width="300" />
+<img src="screenshots/exercise-navigator-tabs.png" alt="Exercise Navigator Tabs" width="300" />
 
 ### Superset Indicators
 
@@ -108,7 +108,7 @@ Each exercise shows a table of sets to complete. For each set, you will see colu
 
 The circle turns into a green checkmark, and the row dims to show it is complete.
 
-<img src="../screenshots/set-logging-table.png" alt="Set Logging Table" width="300" />
+<img src="screenshots/set-logging-table.png" alt="Set Logging Table" width="300" />
 
 ### Undoing a Completed Set
 
@@ -190,7 +190,7 @@ When the timer reaches zero:
 
 Tap **Skip** on the timer overlay if you are ready to go before it runs out.
 
-<img src="../screenshots/rest-timer-overlay.png" alt="Rest Timer Overlay" width="300" />
+<img src="screenshots/rest-timer-overlay.png" alt="Rest Timer Overlay" width="300" />
 
 ---
 
@@ -219,7 +219,7 @@ The calculator:
 
 You can customize your bar weight and available plate sizes in [Settings](settings.md).
 
-<img src="../screenshots/plate-calculator.png" alt="Plate Calculator" width="300" />
+<img src="screenshots/plate-calculator.png" alt="Plate Calculator" width="300" />
 
 ---
 
@@ -255,7 +255,7 @@ The app automatically checks for personal records every time you complete a set.
 
 The notification disappears after a few seconds. All your PRs are saved and viewable in the Stats section.
 
-<img src="../screenshots/pr-notification.png" alt="PR Notification" width="300" />
+<img src="screenshots/pr-notification.png" alt="PR Notification" width="300" />
 
 ---
 
@@ -301,7 +301,7 @@ A summary panel slides up showing:
 - **Sets** -- Number of completed sets.
 - **Volume** -- Total weight moved (weight x reps, summed across all sets).
 
-<img src="../screenshots/finish-workout-summary.png" alt="Finish Workout Summary" width="300" />
+<img src="screenshots/finish-workout-summary.png" alt="Finish Workout Summary" width="300" />
 
 ### Notes
 

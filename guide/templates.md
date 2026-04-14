@@ -11,7 +11,7 @@ Open **Workouts > My Templates** from the main screen. You'll see two sections:
 - **Built-in** --- ready-made templates that come with the app. These cover several popular training styles (details below).
 - **My Templates** --- any custom templates you've created.
 
-<img src="../screenshots/templates-list.png" alt="Templates list page showing Built-in and My Templates sections" width="300" />
+<img src="screenshots/templates-list.png" alt="Templates list page showing Built-in and My Templates sections" width="300" />
 
 ### Built-in Templates
 
@@ -54,7 +54,7 @@ Tap a tab to show only templates in that category. The count below the tabs upda
 3. Optionally add a **description** to remind yourself what the session is about.
 4. Pick a **category** by tapping one of the quick-select buttons (Push, Pull, Legs, Upper, Lower, Full Body, Arms, Core, Cardio) or type your own.
 
-<img src="../screenshots/template-builder-fields.png" alt="Template Builder - name, description, and category fields" width="300" />
+<img src="screenshots/template-builder-fields.png" alt="Template Builder - name, description, and category fields" width="300" />
 
 ### Adding Exercises
 
@@ -63,7 +63,7 @@ Tap a tab to show only templates in that category. The count below the tabs upda
 7. Tap exercises to select them --- a checkmark appears next to each selected exercise. You can select multiple exercises at once.
 8. Tap the **Add N Exercises** button at the top to add them all to your template.
 
-<img src="../screenshots/exercise-picker.png" alt="Exercise Picker with multi-select and muscle group filters" width="300" />
+<img src="screenshots/exercise-picker.png" alt="Exercise Picker with multi-select and muscle group filters" width="300" />
 
 > **Tip:** You can also create a brand new custom exercise from the exercise picker. Tap "Create Custom Exercise," fill in the name, muscle group, and equipment, then save it.
 
@@ -83,7 +83,7 @@ Each exercise starts with a default set scheme of 3 working sets of 8-12 reps. T
 11. Tap **Add Set Group** to add another set group to the same exercise. For example, you might have 2 warmup sets followed by 3 working sets followed by 1 AMRAP set.
 12. To remove a set group, tap the **X** button next to it (you must keep at least one set group per exercise).
 
-<img src="../screenshots/set-scheme-editor.png" alt="Set Scheme Editor showing type dropdown, sets, rep range, and RPE fields" width="300" />
+<img src="screenshots/set-scheme-editor.png" alt="Set Scheme Editor showing type dropdown, sets, rep range, and RPE fields" width="300" />
 
 ### Understanding Set Types
 

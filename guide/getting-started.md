@@ -30,7 +30,7 @@ You will be signed in automatically and taken to the Workouts screen.
 
 > **Note:** Registration may use an invisible reCAPTCHA check to prevent abuse. No action is needed on your part -- it runs automatically in the background.
 
-<img src="../screenshots/registration-screen.png" alt="Registration Screen" width="300" />
+<img src="screenshots/registration-screen.png" alt="Registration Screen" width="300" />
 
 > **Tip:** Already have an account? Tap **Sign In** and enter your username and password instead.
 
@@ -49,7 +49,7 @@ Once you are signed in, you will see the bottom navigation bar with four tabs. T
 | **History** | Review every past workout session with full details (exercises, sets, weights, reps). |
 | **Settings** | Change your preferences (weight units, rest timers), manage your account, and export your data. |
 
-<img src="../screenshots/bottom-navigation-bar.png" alt="Bottom Navigation Bar" width="300" />
+<img src="screenshots/bottom-navigation-bar.png" alt="Bottom Navigation Bar" width="300" />
 
 ---
 
@@ -67,7 +67,7 @@ The Workouts tab is the first thing you see after signing in. It is designed to 
 - **My Templates** -- A link to your saved workout plans. See [Templates Guide](templates.md) to learn how to create and manage them.
 - **Programs** -- A link to your multi-week training programs. See [Programs Guide](programs.md) to set one up.
 
-<img src="../screenshots/workouts-home-screen.png" alt="Workouts Home Screen" width="300" />
+<img src="screenshots/workouts-home-screen.png" alt="Workouts Home Screen" width="300" />
 
 ---
 

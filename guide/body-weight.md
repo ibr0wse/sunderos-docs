@@ -16,7 +16,7 @@ The Body Weight page lets you log your weight over time and visualize your progr
 
 A green confirmation message appears briefly when the entry is saved.
 
-<img src="../screenshots/body-weight-log-form.png" alt="Body weight log form" width="300" />
+<img src="screenshots/body-weight-log-form.png" alt="Body weight log form" width="300" />
 
 > **Tip:** For the most consistent readings, weigh yourself at the same time each day -- most people prefer first thing in the morning before eating.
 
@@ -26,7 +26,7 @@ A green confirmation message appears briefly when the entry is saved.
 
 Once you have logged entries, a **Progress** chart appears showing your weight over time as a line graph.
 
-<img src="../screenshots/body-weight-progress-chart.png" alt="Body weight progress chart" width="300" />
+<img src="screenshots/body-weight-progress-chart.png" alt="Body weight progress chart" width="300" />
 
 ### Chart Period Filters
 
@@ -72,7 +72,7 @@ Each entry displays:
 - Date (e.g. "Mon, Feb 3")
 - Notes (if any)
 
-<img src="../screenshots/body-weight-entries-list.png" alt="Recent body weight entries list" width="300" />
+<img src="screenshots/body-weight-entries-list.png" alt="Recent body weight entries list" width="300" />
 
 ### Deleting an Entry
 

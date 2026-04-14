@@ -26,7 +26,7 @@ The most common use case is connecting the MCP server to Claude Code, Claude Des
 5. Optionally set an **expiration date**. If you leave this blank, the key never expires.
 6. Tap **Create Key**.
 
-<img src="../screenshots/api-key-generation.png" alt="API Key Generation" width="300" />
+<img src="screenshots/api-key-generation.png" alt="API Key Generation" width="300" />
 
 A green banner will appear showing your new key. It starts with `so_` followed by a long string of characters.
 
@@ -35,7 +35,7 @@ A green banner will appear showing your new key. It starts with `so_` followed b
 7. Tap the **copy button** next to the key to copy it to your clipboard.
 8. Tap **I've saved this key** to dismiss the banner.
 
-<img src="../screenshots/api-key-created-banner.png" alt="Newly Created API Key Banner" width="300" />
+<img src="screenshots/api-key-created-banner.png" alt="Newly Created API Key Banner" width="300" />
 
 ### Managing Existing Keys
 

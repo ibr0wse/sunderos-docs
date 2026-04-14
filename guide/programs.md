@@ -12,7 +12,7 @@ Open **Workouts > Programs** from the main screen. Programs are organized into t
 - **Built-in** --- ready-made programs that ship with the app.
 - **My Programs** --- custom programs you've created.
 
-<img src="../screenshots/programs-list.png" alt="Programs list showing Active, Built-in, and My Programs sections" width="300" />
+<img src="screenshots/programs-list.png" alt="Programs list showing Active, Built-in, and My Programs sections" width="300" />
 
 ### Built-in Programs
 
@@ -84,7 +84,7 @@ Tap **Start Week _N+1_** to advance the pointer to the first workout day of the 
 2. Enter a **name** for your program (required) --- for example, "12-Week Strength" or "Summer Cut."
 3. Optionally add a **description**.
 
-<img src="../screenshots/program-builder-fields.png" alt="Program Builder - name, description, and schedule type fields" width="300" />
+<img src="screenshots/program-builder-fields.png" alt="Program Builder - name, description, and schedule type fields" width="300" />
 
 ### Choosing a Schedule Type
 
@@ -104,7 +104,7 @@ Tap **Start Week _N+1_** to advance the pointer to the first workout day of the 
 8. Choose a template from the list to assign it to that day, or choose **Rest Day** to mark it as a rest day.
 9. To clear a day's assignment, tap the **X** button next to it.
 
-<img src="../screenshots/program-day-grid.png" alt="Program Builder day grid with template picker overlay" width="300" />
+<img src="screenshots/program-day-grid.png" alt="Program Builder day grid with template picker overlay" width="300" />
 
 In **weekly mode**, days are labeled by their name (Mon, Tue, Wed, etc.). In **sequential mode**, days are labeled by number (Day 1, Day 2, etc.).
 
@@ -138,7 +138,7 @@ When you activate a built-in program, the app creates your own personal copy so 
 
 Activating a new program automatically deactivates any previously active program.
 
-<img src="../screenshots/active-program-card.png" alt="Active program card with green border and Active badge" width="300" />
+<img src="screenshots/active-program-card.png" alt="Active program card with green border and Active badge" width="300" />
 
 ---
 
@@ -160,7 +160,7 @@ In sequential mode, the app keeps track of a **current day index** that advances
 
 From the Workouts main screen, tap the workout card to jump straight into the session with the correct template pre-loaded. See the [Workouts Guide](workouts.md) for details on the active workout screen.
 
-<img src="../screenshots/todays-workout-card.png" alt="Workouts main screen showing Today's Workout card from active program" width="300" />
+<img src="screenshots/todays-workout-card.png" alt="Workouts main screen showing Today's Workout card from active program" width="300" />
 
 ---
 

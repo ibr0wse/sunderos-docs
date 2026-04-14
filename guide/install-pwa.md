@@ -96,7 +96,7 @@ If you come back online but there are still pending changes waiting to sync, you
 
 You can tap the **refresh icon** on the amber banner to manually trigger a sync if you do not want to wait.
 
-<img src="../screenshots/offline-banner.png" alt="Offline Banner" width="300" />
+<img src="screenshots/offline-banner.png" alt="Offline Banner" width="300" />
 
 Once everything is synced and you are back online, the banner disappears.
 

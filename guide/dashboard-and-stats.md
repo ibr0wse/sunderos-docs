@@ -15,7 +15,7 @@ At the top of the Dashboard, you'll see four filter buttons:
 
 Tap any button to update all the stat cards below.
 
-<img src="../screenshots/dashboard-period-filter.png" alt="Dashboard period filter buttons" width="300" />
+<img src="screenshots/dashboard-period-filter.png" alt="Dashboard period filter buttons" width="300" />
 
 ---
 
@@ -32,7 +32,7 @@ Six cards summarize your training for the selected period:
 | **Current Streak** | How many consecutive weeks you've trained at least once |
 | **Best Streak** | Your longest-ever weekly training streak |
 
-<img src="../screenshots/dashboard-stat-cards.png" alt="Dashboard stat cards grid" width="300" />
+<img src="screenshots/dashboard-stat-cards.png" alt="Dashboard stat cards grid" width="300" />
 
 > **Tip:** Streaks are measured in weeks. As long as you complete at least one workout each week, your streak keeps growing.
 
@@ -42,7 +42,7 @@ Six cards summarize your training for the selected period:
 
 This stacked bar chart breaks down your training volume by muscle group over the last 8 weeks. Each bar represents one week, and the colored segments show how much volume went to each muscle group.
 
-<img src="../screenshots/volume-by-muscle-chart.png" alt="Volume by muscle group chart" width="300" />
+<img src="screenshots/volume-by-muscle-chart.png" alt="Volume by muscle group chart" width="300" />
 
 **Reading the chart:**
 
@@ -73,7 +73,7 @@ A color legend also appears below the chart for quick reference. Use this chart 
 
 Below the volume chart, a heatmap shows your workout frequency over the past 6 months. Each small square represents one day, organized by month.
 
-<img src="../screenshots/workout-frequency-heatmap.png" alt="Workout frequency heatmap" width="300" />
+<img src="screenshots/workout-frequency-heatmap.png" alt="Workout frequency heatmap" width="300" />
 
 **How to read it:**
 
