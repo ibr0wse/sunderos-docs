@@ -26,7 +26,7 @@ The most common use case is connecting the MCP server to Claude Code, Claude Des
 5. Optionally set an **expiration date**. If you leave this blank, the key never expires.
 6. Tap **Create Key**.
 
-![API Key Generation](../screenshots/api-key-generation.png)
+<img src="../screenshots/api-key-generation.png" alt="API Key Generation" width="300" />
 
 A green banner will appear showing your new key. It starts with `so_` followed by a long string of characters.
 
@@ -35,7 +35,7 @@ A green banner will appear showing your new key. It starts with `so_` followed b
 7. Tap the **copy button** next to the key to copy it to your clipboard.
 8. Tap **I've saved this key** to dismiss the banner.
 
-![Newly Created API Key Banner](../screenshots/api-key-created-banner.png)
+<img src="../screenshots/api-key-created-banner.png" alt="Newly Created API Key Banner" width="300" />
 
 ### Managing Existing Keys
 
@@ -79,7 +79,7 @@ The easiest way to set up the MCP server is with `npx` — no need to install an
   "mcpServers": {
     "sunderos": {
       "command": "npx",
-      "args": ["-y", "sunderos-mcp"],
+      "args": ["-y", "sunderos-mcp@latest"],
       "env": {
         "SUNDEROS_API_KEY": "so_your_key_here",
         "SUNDEROS_API_URL": "https://your-site.example.com"
@@ -95,7 +95,7 @@ This works with any tool that supports the MCP standard, including Claude Code, 
 
 ## Available MCP Tools
 
-Once connected, the AI assistant has access to 23 tools organized by domain. You do not need to call these tools directly -- just ask questions or give instructions in natural language, and the assistant will use the right tool automatically.
+Once connected, the AI assistant has access to 24 tools organized by domain. You do not need to call these tools directly -- just ask questions or give instructions in natural language, and the assistant will use the right tool automatically.
 
 ### Exercises (3 tools)
 
@@ -105,7 +105,7 @@ Once connected, the AI assistant has access to 23 tools organized by domain. You
 | `create_exercise` | Add a new custom exercise to your library |
 | `delete_exercise` | Remove a custom exercise you created |
 
-### Workout Templates (5 tools)
+### Workout Templates (6 tools)
 
 | Tool | What it does |
 |------|-------------|
@@ -114,6 +114,7 @@ Once connected, the AI assistant has access to 23 tools organized by domain. You
 | `create_template` | Create a new workout template with exercises and set/rep targets |
 | `update_template` | Modify an existing template (name, exercises, sets, etc.) |
 | `delete_template` | Delete a workout template |
+| `swap_exercise` | Replace one exercise with another in a single template, or across every template in a program — set schemes, rest, and supersets are preserved |
 
 ### Training Programs (6 tools)
 

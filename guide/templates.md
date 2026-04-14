@@ -11,11 +11,11 @@ Open **Workouts > My Templates** from the main screen. You'll see two sections:
 - **Built-in** --- ready-made templates that come with the app. These cover several popular training styles (details below).
 - **My Templates** --- any custom templates you've created.
 
-![Templates list page showing Built-in and My Templates sections](../screenshots/templates-list.png)
+<img src="../screenshots/templates-list.png" alt="Templates list page showing Built-in and My Templates sections" width="300" />
 
 ### Built-in Templates
 
-The app ships with 11 built-in templates organized across four training styles:
+The app ships with 15 built-in templates covering strength splits, full-body days, and cardio/HIIT sessions:
 
 | Template | Category | Focus |
 |---|---|---|
@@ -30,6 +30,10 @@ The app ships with 11 built-in templates organized across four training styles:
 | Strength Upper B | Upper | Heavy overhead press focus |
 | Strength Lower A | Lower | Heavy squat focus |
 | Strength Lower B | Lower | Heavy deadlift focus |
+| Tabata Assault Bike | Cardio | 8 rounds × 20s hard / 10s rest on the assault bike |
+| 20-Min HIIT Row | Cardio | 10 × 1-min work / 1-min rest on the rowing machine |
+| Zone 2 Run | Cardio | 30-minute steady-state zone 2 treadmill run for aerobic base |
+| Push Day + Cardio Finisher | Push | Full push workout followed by a 10-minute assault bike finisher |
 
 Built-in templates use a mix of set types (warmups, working sets, backoff sets, drop sets, and AMRAP sets) and include supersets. You can start a workout from any built-in template, but you cannot edit or delete them.
 
@@ -50,16 +54,16 @@ Tap a tab to show only templates in that category. The count below the tabs upda
 3. Optionally add a **description** to remind yourself what the session is about.
 4. Pick a **category** by tapping one of the quick-select buttons (Push, Pull, Legs, Upper, Lower, Full Body, Arms, Core, Cardio) or type your own.
 
-![Template Builder - name, description, and category fields](../screenshots/template-builder-fields.png)
+<img src="../screenshots/template-builder-fields.png" alt="Template Builder - name, description, and category fields" width="300" />
 
 ### Adding Exercises
 
 5. Tap **Add Exercise** to open the exercise picker.
-6. Browse exercises by muscle group using the filter chips, or type in the search bar to find a specific exercise.
+6. Use the **kind tabs** (All / Strength / Cardio) at the top to narrow the list by exercise type, then browse by muscle group using the filter chips or type in the search bar to find a specific exercise.
 7. Tap exercises to select them --- a checkmark appears next to each selected exercise. You can select multiple exercises at once.
 8. Tap the **Add N Exercises** button at the top to add them all to your template.
 
-![Exercise Picker with multi-select and muscle group filters](../screenshots/exercise-picker.png)
+<img src="../screenshots/exercise-picker.png" alt="Exercise Picker with multi-select and muscle group filters" width="300" />
 
 > **Tip:** You can also create a brand new custom exercise from the exercise picker. Tap "Create Custom Exercise," fill in the name, muscle group, and equipment, then save it.
 
@@ -79,7 +83,7 @@ Each exercise starts with a default set scheme of 3 working sets of 8-12 reps. T
 11. Tap **Add Set Group** to add another set group to the same exercise. For example, you might have 2 warmup sets followed by 3 working sets followed by 1 AMRAP set.
 12. To remove a set group, tap the **X** button next to it (you must keep at least one set group per exercise).
 
-![Set Scheme Editor showing type dropdown, sets, rep range, and RPE fields](../screenshots/set-scheme-editor.png)
+<img src="../screenshots/set-scheme-editor.png" alt="Set Scheme Editor showing type dropdown, sets, rep range, and RPE fields" width="300" />
 
 ### Understanding Set Types
 
@@ -90,6 +94,20 @@ Each exercise starts with a default set scheme of 3 working sets of 8-12 reps. T
 | **Backoff** | Lighter sets after your working sets for extra volume. |
 | **Drop Set** | Immediately reduce weight after a set and continue repping. |
 | **AMRAP** | As Many Reps As Possible --- push to near-failure on the last set. |
+
+### Cardio Exercises
+
+The app ships with 12 cardio exercises (treadmill, rowing machine, assault bike, elliptical, jump rope, swimming, and more). They appear under the **Cardio** tab in the exercise picker and are marked with a red activity icon and a CARDIO badge on the template card.
+
+Cardio exercises use a different set scheme editor:
+
+| Field | Description |
+|---|---|
+| **Rounds** | Number of intervals (1-50). For steady-state cardio, use 1. |
+| **Min Dur** / **Max Dur** | Target duration per round as `mm:ss` (or `h:mm:ss`). Leave Max blank for a fixed duration. |
+| **Dist (m)** | Optional target distance in meters. Use for distance-based efforts like a fixed-distance row. |
+
+For example, "8 × 0:20" is a Tabata-style scheme with 8 rounds of 20 seconds. RPE targets are not used for cardio --- pace is measured directly on the set log. See the [Workouts Guide](workouts.md) for how cardio sets are logged.
 
 ### Setting Rest Times
 

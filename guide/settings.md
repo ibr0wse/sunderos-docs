@@ -18,7 +18,7 @@ The Profile section shows your **username** and **user ID**.
 
 A green confirmation message appears on success. Tap **Cancel** to close the form without making changes.
 
-![Change password form](../screenshots/change-password-form.png)
+<img src="../screenshots/change-password-form.png" alt="Change password form" width="300" />
 
 ---
 
@@ -31,7 +31,20 @@ Choose your preferred unit for displaying and logging weights:
 
 Tap your preferred option. The selection saves immediately. This affects the plate calculator and weight displays throughout the app.
 
-![Weight unit toggle](../screenshots/weight-unit-toggle.png)
+<img src="../screenshots/weight-unit-toggle.png" alt="Weight unit toggle" width="300" />
+
+---
+
+## Distance Unit
+
+Choose your preferred unit for logging and displaying cardio distances:
+
+- **Kilometers (km)** -- default
+- **Miles (mi)**
+
+Tap your preferred option. The selection saves immediately. This affects the Dist column on cardio set rows, the pace readout (e.g. `5:30/km` vs `8:30/mi`), and distance summaries in your history.
+
+[Screenshot: Distance unit toggle]
 
 ---
 
@@ -46,7 +59,7 @@ Control how exercises are displayed during an active workout:
 
 Tap your preferred mode. The selection saves immediately.
 
-![Workout view mode toggle](../screenshots/workout-view-mode-toggle.png)
+<img src="../screenshots/workout-view-mode-toggle.png" alt="Workout view mode toggle" width="300" />
 
 ---
 
@@ -66,7 +79,7 @@ Configure how long the rest timer counts down after completing a set. Each set t
 
 Use the **-** and **+** buttons next to each set type to adjust the rest time in **15-second increments**. Timers can be set from 0 seconds (no rest timer) up to 10 minutes.
 
-![Rest timer configuration](../screenshots/rest-timer-configuration.png)
+<img src="../screenshots/rest-timer-configuration.png" alt="Rest timer configuration" width="300" />
 
 ### Apply to All Templates
 
@@ -101,7 +114,7 @@ This shows the plate weights you have available. Plates are listed from heaviest
 
 Tap the plate chip directly -- it will be removed from your available plates.
 
-![Plate calculator configuration](../screenshots/plate-calculator-configuration.png)
+<img src="../screenshots/plate-calculator-configuration.png" alt="Plate calculator configuration" width="300" />
 
 ---
 
@@ -118,7 +131,7 @@ API keys let external tools like Claude, ChatGPT, or Cursor access your fitness 
 5. **Copy the key immediately** -- it won't be shown again after you dismiss the banner.
 6. Tap **I've saved this key** to dismiss.
 
-![Newly created API key banner](../screenshots/api-key-banner.png)
+<img src="../screenshots/api-key-banner.png" alt="Newly created API key banner" width="300" />
 
 You can have up to **25 API keys** per account. If you reach the limit, revoke unused keys before creating new ones.
 

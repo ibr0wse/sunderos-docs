@@ -44,15 +44,15 @@ The app automatically figures out which workout is next based on the day of the 
 
 Once you start a workout, you enter the active workout screen. This is a full-screen experience designed to keep you focused.
 
-![Active Workout Screen](../screenshots/active-workout-screen.png)
+<img src="../screenshots/active-workout-screen.png" alt="Active Workout Screen" width="300" />
 
 ### Header
 
 At the top you will find:
 
 - **Back arrow** -- Leave the workout (you will be prompted to confirm if you have logged any sets).
-- **Timer** -- A running clock showing how long you have been working out (hours:minutes:seconds).
-- **Skip** -- Leave the workout unfinished. The session stays active and can be resumed later from the Workouts screen.
+- **Timer** -- A running clock showing how long you have been working out (hours:minutes:seconds). Tap the timer to pause it -- the display turns yellow with a play icon. Tap again to resume. The pause state syncs to the server, so if you close the app, clear your cache, or pick the workout back up on another device, the timer resumes frozen at the exact same elapsed time. If you leave the workout via the back button, the timer pauses automatically so time away does not count.
+- **Skip** -- Finish the workout immediately. The session is marked as done on the server with a "Skipped" note. For sequential programs, Skip advances to the next workout day.
 - **Finish** -- End the workout and save your session.
 
 ### View Modes
@@ -77,7 +77,7 @@ In tabbed mode, a scrollable row of exercise tabs appears below the header. Each
 
 Tap any tab to jump to that exercise. A **+** button at the end lets you add more exercises mid-workout.
 
-![Exercise Navigator Tabs](../screenshots/exercise-navigator-tabs.png)
+<img src="../screenshots/exercise-navigator-tabs.png" alt="Exercise Navigator Tabs" width="300" />
 
 ### Superset Indicators
 
@@ -108,7 +108,11 @@ Each exercise shows a table of sets to complete. For each set, you will see colu
 
 The circle turns into a green checkmark, and the row dims to show it is complete.
 
-![Set Logging Table](../screenshots/set-logging-table.png)
+<img src="../screenshots/set-logging-table.png" alt="Set Logging Table" width="300" />
+
+### Undoing a Completed Set
+
+Changed your mind or logged the wrong values? Tap the green checkmark on a completed set to uncheck it. The set row becomes editable again so you can update the weight, reps, or RPE. If the set had already been synced to the server, the app removes it from the server as well -- so your history stays accurate.
 
 ### Auto-Fill and Placeholders
 
@@ -120,9 +124,34 @@ The app helps you fill in values faster:
 
 If you tap the checkmark without typing anything, the app uses these placeholder values automatically.
 
-### Adding Extra Sets
+---
 
-If you want to do more sets than your plan calls for, tap the **+ Add Set** button below the set table. A new empty row appears as a "working" set.
+## Logging Cardio Sets
+
+Cardio exercises (treadmill, rowing machine, assault bike, etc.) swap the strength columns for cardio-specific ones. The exercise header shows a red activity icon and a **CARDIO** badge, and the set table has these columns instead of WT/Reps/RPE:
+
+| Column | Description |
+|--------|-------------|
+| **Set** | The round number (1, 2, 3...). |
+| **Prev** | The duration you logged for this round last time. |
+| **Dur** | Duration input as `mm:ss` or `h:mm:ss` (e.g. `0:20`, `1:30`, `30:00`). The placeholder shows the target from your template. |
+| **Dist** | Distance covered, entered in your preferred unit (km, mi, or m --- see [Settings](settings.md)). Optional. |
+| **Pace** | Calculated automatically from duration and distance (e.g. `5:30/km`). Read-only. |
+| **Type** | Set type, same colour-coded options as strength sets. |
+| **Checkmark** | Tap the circle to mark the round as complete. |
+
+The rest timer and set-type behaviour work the same as strength exercises. Plate calculator and 1RM estimates are hidden for cardio. Volume totals on the finish screen exclude cardio rounds (they have no weight), but session duration still includes them.
+
+[Screenshot: Active workout screen showing a cardio exercise with Dur/Dist/Pace columns]
+
+---
+
+## Adding and Removing Sets
+
+Every exercise card has **Add Set** and **Remove Set** buttons at the bottom of the set table.
+
+- **Add Set** -- Appends a new working set that matches the exercise's target rep range. Use this when you want to do more sets than your plan calls for.
+- **Remove Set** -- Removes the last uncompleted set. If all sets are already completed, it removes the last set. A minimum of 1 set per exercise is enforced, so you cannot remove the only remaining set.
 
 ---
 
@@ -161,7 +190,7 @@ When the timer reaches zero:
 
 Tap **Skip** on the timer overlay if you are ready to go before it runs out.
 
-![Rest Timer Overlay](../screenshots/rest-timer-overlay.png)
+<img src="../screenshots/rest-timer-overlay.png" alt="Rest Timer Overlay" width="300" />
 
 ---
 
@@ -190,7 +219,7 @@ The calculator:
 
 You can customize your bar weight and available plate sizes in [Settings](settings.md).
 
-![Plate Calculator](../screenshots/plate-calculator.png)
+<img src="../screenshots/plate-calculator.png" alt="Plate Calculator" width="300" />
 
 ---
 
@@ -211,8 +240,8 @@ Supersets let you pair two or more exercises to perform back-to-back with no res
 
 ### Visual Indicators
 
-- **Tabbed mode:** Superset partners appear linked in the exercise navigator with chain icons. A "SUPERSET" banner with quick-switch buttons appears above the current exercise.
-- **Scroll mode:** Superset exercises are wrapped together in a bordered container labeled "SUPERSET."
+- **Tabbed mode:** Superset partners appear linked in the exercise navigator with chain icons and are highlighted in red. A "SUPERSET" banner with quick-switch buttons appears above the current exercise.
+- **Scroll mode:** Superset exercises are wrapped together in a red-bordered container labeled "SUPERSET."
 
 ---
 
@@ -226,7 +255,7 @@ The app automatically checks for personal records every time you complete a set.
 
 The notification disappears after a few seconds. All your PRs are saved and viewable in the Stats section.
 
-![PR Notification](../screenshots/pr-notification.png)
+<img src="../screenshots/pr-notification.png" alt="PR Notification" width="300" />
 
 ---
 
@@ -245,6 +274,21 @@ The new exercise is added with 3 working sets (6-12 rep range) by default. You c
 
 ---
 
+## Swapping Exercises
+
+If you want to replace an exercise mid-workout (maybe a machine is taken, a form issue flares up, or you want a variation):
+
+1. Tap the **swap icon** (arrows) next to the exercise name.
+2. The exercise picker opens. Search or browse for the replacement exercise.
+3. After selecting the new exercise, choose the scope of the swap:
+   1. **Just for today** -- Only changes the exercise in the current session. Your template and program are untouched.
+   2. **Update template** -- Swaps the exercise in the current session and updates the source template so future workouts use the new exercise.
+   3. **Replace in entire program** -- Swaps the exercise in the current session and updates every template in your active program that uses the old exercise.
+
+The new exercise gets a fresh set of empty rows that inherits the old exercise's set scheme (rep range, set types, rounds, duration targets). Any sets you already completed on the swapped-out exercise stay in your history attached to that original exercise --- they just no longer appear in this session.
+
+---
+
 ## Finishing a Workout
 
 When you are done, tap the **Finish** button in the header. If you have incomplete sets, you will be asked to confirm whether you want to finish anyway.
@@ -257,7 +301,7 @@ A summary panel slides up showing:
 - **Sets** -- Number of completed sets.
 - **Volume** -- Total weight moved (weight x reps, summed across all sets).
 
-![Finish Workout Summary](../screenshots/finish-workout-summary.png)
+<img src="../screenshots/finish-workout-summary.png" alt="Finish Workout Summary" width="300" />
 
 ### Notes
 
@@ -303,9 +347,14 @@ When you come back:
 | Start today's programmed workout | Workouts tab -> tap the Today's Workout card |
 | Repeat last workout | Workouts tab -> Repeat Last Session |
 | Log a set | Enter weight (optional for bodyweight exercises) + reps, tap the circle |
+| Undo a completed set | Tap the green checkmark to uncheck it |
 | Add an exercise | Tap the **+** button |
-| Add extra sets | Tap "+ Add Set" below the set table |
+| Add a set | Tap "Add Set" below the set table |
+| Remove a set | Tap "Remove Set" below the set table |
+| Swap an exercise | Tap the swap icon next to the exercise name |
+| Pause/resume timer | Tap the timer in the header |
 | Use the plate calculator | Tap "Plates" (barbell exercises only) |
 | Skip rest timer | Tap "Skip" on the timer overlay |
+| Skip workout | Tap "Skip" in the header (finishes and advances program) |
 | Finish workout | Tap "Finish" in the header |
 | Resume a workout | Tap "Resume Workout" banner on the Workouts screen |

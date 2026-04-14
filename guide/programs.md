@@ -12,11 +12,11 @@ Open **Workouts > Programs** from the main screen. Programs are organized into t
 - **Built-in** --- ready-made programs that ship with the app.
 - **My Programs** --- custom programs you've created.
 
-![Programs list showing Active, Built-in, and My Programs sections](../screenshots/programs-list.png)
+<img src="../screenshots/programs-list.png" alt="Programs list showing Active, Built-in, and My Programs sections" width="300" />
 
 ### Built-in Programs
 
-The app includes four built-in programs:
+The app includes eight built-in programs covering weekly and sequential scheduling:
 
 | Program | Duration | Days/Week | Style |
 |---|---|---|---|
@@ -24,6 +24,10 @@ The app includes four built-in programs:
 | 4-Week Upper/Lower | 4 weeks | 4 days | Upper and Lower twice per week |
 | 4-Week Full Body | 4 weeks | 3 days | Alternating Full Body A and B |
 | 8-Week Strength | 8 weeks | 4 days | Heavy compound focus with AMRAP tracking |
+| HIIT Hybrid | 4 weeks | 5 days | Three strength sessions plus two cardio/HIIT sessions per week |
+| 12-Week Periodized | 12 weeks | 3–4 days | Sequential 3-phase progression: Foundation → Hypertrophy → Strength |
+| 6-Week HIIT Sprint | 6 weeks | 5 days | Sequential conditioning mix of tabata, zone 2, and strength + cardio finishers |
+| 4-Week PPL Sequential | 4 weeks | 5 days | Push/Pull/Legs at your own pace — advance when you finish each day, not by the calendar |
 
 Each built-in program uses the built-in templates. You can activate any built-in program to start following it right away --- the app will create your own copy so your progress stays separate.
 
@@ -33,13 +37,54 @@ Each program card shows a weekly schedule preview --- a row of day indicators (M
 
 ---
 
+## Working Through Your Program
+
+Once a program is active, the Workouts home screen shows a schedule section that tracks which workouts you have completed this week and which one is up next. The section header reads **This Week** for weekly programs and **Up Next** for sequential programs (sequential programs also show "Week N of M" next to the program name).
+
+### The Schedule View
+
+A prominent card at the top of the section shows your next scheduled workout with a large Play button. Tap it to jump straight into that session with the correct template pre-loaded. Below that, tap **View full schedule** to expand the full list of days for the current week.
+
+Each day in the expanded list shows one of three states:
+
+| State | Indicator | Meaning |
+|---|---|---|
+| **NEXT** | Accent highlight, `NEXT` label | The first uncompleted workout in the week. This is what the top card points to. |
+| **Done** | Green checkmark, muted text | A workout you have already completed. |
+| **Pending** | Play icon | A scheduled workout that is not yet complete and is not the next one. |
+
+Rest days appear dimmed with a "Rest" label and cannot be tapped.
+
+[Screenshot: Workouts home screen showing the This Week schedule with a Next card and expanded day list]
+
+### Working Out of Order
+
+Any pending day in the expanded list is tappable --- you do not have to follow the order. Tap any workout (including ones later in the week) to start that session. Completion is tracked per program day, so picking a different day does not throw off the schedule. When you finish a session started from the schedule, it counts against that specific day, not against the "next" pointer.
+
+### Weekly Mode
+
+Weekly programs show Mon through Sun for the current calendar week. A workout shows as done if a completed session with that template exists for the current week. If a template appears on more than one day (e.g. Push on both Mon and Thu), the app marks them done one at a time as you complete sessions.
+
+### Sequential Mode
+
+Sequential programs show every workout day in the pointer's current week (Day 1, Day 2, etc.). Days before the pointer are marked done automatically. Days at or after the pointer show done only if a session was finished for that exact day index.
+
+After you finish a sequential workout, the app auto-advances the pointer to the next uncompleted day in the current week. It does **not** skip across weeks automatically --- instead, when every workout day in the current week is complete, the schedule panel switches to a success state:
+
+> **All workouts completed this week!**
+> Start Week _N+1_ of _M_
+
+Tap **Start Week _N+1_** to advance the pointer to the first workout day of the next week. When the last week is complete, the app shows "Program complete!" instead.
+
+---
+
 ## Creating a Custom Program
 
 1. From the programs page, tap the **+** button in the top-right corner.
 2. Enter a **name** for your program (required) --- for example, "12-Week Strength" or "Summer Cut."
 3. Optionally add a **description**.
 
-![Program Builder - name, description, and schedule type fields](../screenshots/program-builder-fields.png)
+<img src="../screenshots/program-builder-fields.png" alt="Program Builder - name, description, and schedule type fields" width="300" />
 
 ### Choosing a Schedule Type
 
@@ -59,7 +104,7 @@ Each program card shows a weekly schedule preview --- a row of day indicators (M
 8. Choose a template from the list to assign it to that day, or choose **Rest Day** to mark it as a rest day.
 9. To clear a day's assignment, tap the **X** button next to it.
 
-![Program Builder day grid with template picker overlay](../screenshots/program-day-grid.png)
+<img src="../screenshots/program-day-grid.png" alt="Program Builder day grid with template picker overlay" width="300" />
 
 In **weekly mode**, days are labeled by their name (Mon, Tue, Wed, etc.). In **sequential mode**, days are labeled by number (Day 1, Day 2, etc.).
 
@@ -93,7 +138,7 @@ When you activate a built-in program, the app creates your own personal copy so 
 
 Activating a new program automatically deactivates any previously active program.
 
-![Active program card with green border and Active badge](../screenshots/active-program-card.png)
+<img src="../screenshots/active-program-card.png" alt="Active program card with green border and Active badge" width="300" />
 
 ---
 
@@ -115,7 +160,7 @@ In sequential mode, the app keeps track of a **current day index** that advances
 
 From the Workouts main screen, tap the workout card to jump straight into the session with the correct template pre-loaded. See the [Workouts Guide](workouts.md) for details on the active workout screen.
 
-![Workouts main screen showing Today's Workout card from active program](../screenshots/todays-workout-card.png)
+<img src="../screenshots/todays-workout-card.png" alt="Workouts main screen showing Today's Workout card from active program" width="300" />
 
 ---
 

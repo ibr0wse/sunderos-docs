@@ -13,7 +13,7 @@ Open the **History** tab from the bottom navigation bar. You'll see a list of yo
 - **Exercise count** (e.g. "5 exercises")
 - **Notes** (if you added any during the session, shown as a preview)
 
-![Workout history session list](../screenshots/history-session-list.png)
+<img src="../screenshots/history-session-list.png" alt="Workout history session list" width="300" />
 
 Sessions are listed in reverse chronological order (most recent first). If you have a large history, tap **Load More** at the bottom to fetch older sessions.
 
@@ -30,7 +30,7 @@ Use the filter buttons at the top to narrow down which sessions appear:
 | **Year** | Sessions from the current year |
 | **All** | Every session you've ever logged |
 
-![History period filter buttons](../screenshots/history-period-filter.png)
+<img src="../screenshots/history-period-filter.png" alt="History period filter buttons" width="300" />
 
 Changing the filter updates both the session list and the summary stats above it.
 
@@ -46,7 +46,7 @@ When you have sessions in the selected period, three stat cards appear at the to
 | **Total Time** | Combined duration of all sessions |
 | **Total Volume** | Total weight lifted (weight x reps across all sets), in lbs |
 
-![History summary stats row](../screenshots/history-summary-stats.png)
+<img src="../screenshots/history-summary-stats.png" alt="History summary stats row" width="300" />
 
 > **Note:** Total Volume is calculated as sessions are expanded and their details loaded. Expand sessions to get a more accurate total.
 
@@ -56,7 +56,7 @@ When you have sessions in the selected period, three stat cards appear at the to
 
 Tap any session card to expand it and see the full breakdown.
 
-[Screenshot: Expanded session detail with exercise sets]
+<img src="../screenshots/session-detail-sets.png" alt="Expanded session detail with exercise sets" width="300" />
 
 ### What You'll See
 
@@ -91,6 +91,20 @@ Hover over data points to see exact values, dates, and volume numbers in a toolt
 Tap the chart icon again to hide the progress chart.
 
 > **Tip:** Progress charts are a quick way to see if you're getting stronger on a specific exercise without leaving the history page.
+
+---
+
+## Deleting a Workout Session
+
+If you need to remove a session from your history (e.g., an accidental or test workout):
+
+1. Swipe left on the session card to reveal the delete button.
+2. Tap the red **Delete** button.
+3. A confirmation dialog appears -- tap **Delete** to confirm or **Cancel** to keep the session.
+
+Deleted sessions and all their logged sets are permanently removed and cannot be recovered.
+
+[Screenshot: Swipe-to-delete revealing delete button on a session card]
 
 ---
 
