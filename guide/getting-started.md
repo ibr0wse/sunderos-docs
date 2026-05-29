@@ -22,17 +22,18 @@ No copy-pasting, no manual data entry. You just talk to it and your app updates 
 
 1. Open the app in your browser (or install it as an app -- see the [Install Guide](install-pwa.md)).
 2. On the login screen, tap **Register** at the bottom.
-3. Choose a **username** (at least 3 characters) and a **password** (at least 8 characters).
-4. Type your password again in the **Confirm Password** field.
-5. Tap **Register**.
+3. Choose a **username** (at least 3 characters).
+4. Enter your **email address**. You'll need this to reset your password if you ever forget it.
+5. Choose a **password** (at least 8 characters) and type it again in the **Confirm Password** field.
+6. Tap **Register**.
 
-You will be signed in automatically and taken to the Workouts screen.
+You will be signed in automatically and taken to the Workouts screen. Sunderos will also send a verification link to the email address you provided -- click it the first chance you get so password reset stays available on your account.
 
 > **Note:** Registration may use an invisible reCAPTCHA check to prevent abuse. No action is needed on your part -- it runs automatically in the background.
 
 <img src="screenshots/registration-screen.png" alt="Registration Screen" width="300" />
 
-> **Tip:** Already have an account? Tap **Sign In** and enter your username and password instead.
+> **Tip:** Already have an account? Tap **Sign In** and enter your **username or email** plus your password. If you've forgotten your password, tap **Forgot password?** below the Sign In button -- a reset link will go to your verified email.
 
 ---
 

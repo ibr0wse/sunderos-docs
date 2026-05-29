@@ -6,7 +6,19 @@ The Settings page lets you customize your experience, manage your data, and cont
 
 ## Profile
 
-The Profile section shows your **username** and **user ID**.
+The Profile section shows your **username**, **user ID**, and the **email** currently on file. If your email hasn't been verified yet, an *(unverified)* tag appears next to it.
+
+### Changing Your Email
+
+1. Tap **Change Email** in the Profile section.
+2. Enter the **new email** address.
+3. Type the new email **again to confirm** it -- this catches typos before we send anything.
+4. Enter your **current password** to prove it's really you.
+5. Tap **Send confirmation**.
+
+A confirmation link will go to the new address. Your email won't actually change until you click that link. As an extra safety measure, your previous email will receive an alert once the change goes through, so if someone else initiates a change you didn't make you'll know about it.
+
+> **Note:** You can sign in with either your username or your email address. Keep your email verified so password reset stays available.
 
 ### Changing Your Password
 
@@ -17,6 +29,8 @@ The Profile section shows your **username** and **user ID**.
 5. Tap **Update Password**.
 
 A green confirmation message appears on success. Tap **Cancel** to close the form without making changes.
+
+> **Note:** Changing your password signs out any other devices you're logged in on. The device you're currently using stays signed in.
 
 <img src="screenshots/change-password-form.png" alt="Change password form" width="300" />
 
